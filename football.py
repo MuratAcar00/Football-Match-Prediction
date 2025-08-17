@@ -10,16 +10,16 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 # 2) CSV Dosyalarını Yükleme
-appearances = pd.read_csv("C:\\Users\\murat\\.vscode\\Projects\Football-Match-Prediction\\footballDataset\\appearances.csv")
-clubs = pd.read_csv("C:\\Users\murat\\.vscode\\Projects\\Football-Match-Prediction\\footballDataset\\clubs.csv")
-club_games = pd.read_csv("C:\\Users\\murat\\.vscode\\Projects\\Football-Match-Prediction\\footballDataset\\club_games.csv")
-competitions = pd.read_csv("C:\\Users\murat\\.vscode\\Projects\\Football-Match-Prediction\\footballDataset\\competitions.csv")
-games = pd.read_csv("C:\\Users\\murat\\.vscode\\Projects\\Football-Match-Prediction\\footballDataset\\games.csv")
-game_events = pd.read_csv("C:\\Users\\murat\\.vscode\\Projects\Football-Match-Prediction\\footballDataset\\game_events.csv")
-game_lineups = pd.read_csv("C:\\Users\\murat\\.vscode\\Projects\\Football-Match-Prediction\\footballDataset\\game_lineups.csv")
-players = pd.read_csv("C:\\Users\\murat\\.vscode\\Projects\\Football-Match-Prediction\\footballDataset\\players.csv")
-player_valuations = pd.read_csv("C:\\Users\\murat\\.vscode\\Projects\\Football-Match-Prediction\\footballDataset\\player_valuations.csv")
-transfers = pd.read_csv("C:\\Users\\murat\\.vscode\\Projects\\Football-Match-Prediction\\footballDataset\\transfers.csv")
+appearances = pd.read_csv("appearances.csv")
+clubs = pd.read_csv("clubs.csv")
+club_games = pd.read_csv("club_games.csv")
+competitions = pd.read_csv("competitions.csv")
+games = pd.read_csv("games.csv")
+game_events = pd.read_csv("game_events.csv")
+game_lineups = pd.read_csv("game_lineups.csv")
+players = pd.read_csv("players.csv")
+player_valuations = pd.read_csv("player_valuations.csv")
+transfers = pd.read_csv("transfers.csv")
 
 # 3) Gereksiz Kolonları Atma (sadece lazım olacakları bırakıyoruz)
 games = games[['game_id', 'competition_id', 'season', 'date',
